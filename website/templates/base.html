@@ -12,24 +12,30 @@
 <body>
     <nav class="navbar is-fixed-top is-black" role="navigation">
         <div class="navbar-brand">
-            <div class="navbar-item">
-                <a hx-get="/" hx-target="body">
-                    <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/logo.png"
+            <a class="navbar-item" hx-get="/" hx-target="body">
+                <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/logo.png"
                          alt="Mason Lauderdale">
-                </a>
-            </div>
+            </a>
+
         </div>
 
         <div id="links" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" hx-get="/about" hx-target="#content">
-                    About me
+            <div class="navbar-end">
+                <a class="navbar-item" hx-get="/resume" hx-target="#content">
+                    Résumé
                 </a>
-
-
+                <a class="navbar-item" hx-get="/projects" hx-target="#content">
+                    Projects
+                </a>
+                <a class="navbar-item" hx-get="/about" hx-target="#content">
+                    About Me
+                </a>
+                <a class="navbar-item" hx-get="/contact" hx-target="#content">
+                    Contact
+                </a>
             </div>
         </div>
     </nav>
-    <div id="content"></div>
+    <section id="content"></section>
 </body>
 </html>
