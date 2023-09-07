@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/htmx.org@1.9.5"
             integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
             crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/burger.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="navbar-brand">
             <div class="navbar-item">
                 <a hx-get="/" hx-target="body">
-                    <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/assets/logo.jpg"
+                    <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/logo.jpg"
                          alt="Mason Lauderdale" width="112" height="28">
                 </a>
             </div>
@@ -27,7 +27,7 @@
             </a>
         </div>
 
-        <div id="links" class="navbar-menu">
+        <div id="links" class="navbar-menu is-active">
             <div class="navbar-start">
                 <a class="navbar-item" hx-get="/about" hx-target="#content">
                     About me
