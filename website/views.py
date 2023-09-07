@@ -15,4 +15,4 @@ def projects():
 
 @views.route('/about')
 def about_me():
-    return "<h1>About Evan.</h1>"
+    return render_template("about.html")
