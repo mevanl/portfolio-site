@@ -10,36 +10,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <nav class="navbar is-fixed-top is-black" role="navigation">
+    <nav class="navbar is-fixed-top has-background-dark" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item" hx-get="/" hx-target="body">
                 <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/logo.png"
                          alt="Mason Lauderdale">
             </a>
-
         </div>
 
         <div id="links" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" hx-get="/resume" hx-target="#content">
+                <a class="navbar-item has-background-dark has-text-white" hx-get="/resume" hx-target="#content">
                     <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/resume.png" alt="">
-                    Résumé
+                    Resume
                 </a>
-                <a class="navbar-item" hx-get="/projects" hx-target="#content">
+                <a class="navbar-item has-background-dark has-text-white" hx-get="/projects" hx-target="#content">
                     <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/projects.png" alt="">
                     Projects
                 </a>
-                <a class="navbar-item" hx-get="/about" hx-target="#content">
+                <a class="navbar-item has-background-dark has-text-white" hx-get="/about" hx-target="#content">
                     <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/about.png">
                     About Me
                 </a>
-                <a class="navbar-item" hx-get="/contact" hx-target="#content">
+                <a role="button" class="navbar-item has-background-dark has-text-white " hx-get="/contact" hx-target="#content">
                     <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/contact.png" alt="">
                     Contact
                 </a>
             </div>
         </div>
     </nav>
-    <section id="content"></section>
+    <section id="content">
+        <section class="hero is-black is-fullheight-with-navbar">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <p class="title is-size-1	">
+                Mason Evan Lauderdale
+              </p>
+              <p class="subtitle is-size-4" >
+                Junior Software Developer
+              </p>
+            </div>
+          </div>
+        </section>
+    </section>
 </body>
 </html>
