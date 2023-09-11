@@ -7,11 +7,10 @@
     <script src="https://unpkg.com/htmx.org@1.9.5"
             integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/adj.css">
+    <link rel="stylesheet" href="../static/mystyle.css">
 </head>
 <body>
-    <nav class="navbar is-fixed-top is-transparent" role="navigation">
+    <nav class="navbar is-fixed-top has-background-white-ter" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item" hx-get="/" hx-target="body">
                 <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/logo.png"
@@ -21,22 +20,28 @@
 
         <div id="links" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item has-background-dark has-text-white" hx-get="/resume" hx-target="#content">
-                    <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/resume.png" alt="">
-                    Resume
-                </a>
-                <a class="navbar-item has-background-dark has-text-white" hx-get="/projects" hx-target="#content">
-                    <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/projects.png" alt="">
-                    Projects
-                </a>
-                <a class="navbar-item has-background-dark has-text-white" hx-get="/about" hx-target="#content">
-                    <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/about.png">
-                    About Me
-                </a>
-                <a role="button" class="navbar-item" hx-get="/contact" hx-target="#content">
+                <a class="navbar-item" hx-get="/resume" hx-target="#content">
                     <button class="button is-primary is-rounded">
+                        <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/resume.png" alt="">
+                        &nbspResume
+                    </button>
+                </a>
+                <a class="navbar-item" hx-get="/projects" hx-target="#content">
+                    <button class="button is-link is-rounded">
+                        <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/projects.png" alt="">
+                        &nbspProjects
+                    </button>
+                </a>
+                <a class="navbar-item" hx-get="/about" hx-target="#content">
+                    <button class="button is-rounded is-danger">
+                        <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/about.png">
+                        &nbspAbout Me
+                    </button>
+                </a>
+                <a class="navbar-item has-background-white" hx-get="/contact" hx-target="#content">
+                    <button class="button is-rounded is-light">
                         <img src="https://raw.githubusercontent.com/mevanl/portfolio-site/main/website/static/contact.png" alt="">
-                        Contact
+                         &nbspContact
                     </button>
                 </a>
             </div>
