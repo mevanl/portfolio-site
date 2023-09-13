@@ -1,10 +1,30 @@
 @charset "UTF-8"
 
+$navbar-height: 3.25rem !default
+
 //colors
-$royal-purple: #561D5E
+$space-cadet: #22223B
+$mint: #3AB795
+$baby-powder: #FBFEF9
 
 // change bulma variables
-$primary: $royal-purple
+$navbar-item-hover-color: $mint
+$primary: $space-cadet
+$link: $mint
+$info: $baby-powder
+
+.navbar
+  background-color: $baby-powder
+
+.navbar-brand
+  height: $navbar-height
+  position: relative
+
+
+
+
+
+
 
 // imports
 @import "bulma-0.9.4/bulma/sass/utilities/_all"
